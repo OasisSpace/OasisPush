@@ -1,0 +1,14 @@
+Welcome to use xtms_client
+[BUILD]
+	[root@localhost]# make
+
+[RUN]
+	start xtms receiver
+	[root@localhost]# xtms_recv 123.56.186.158 8660 name0 123456
+	
+	send single message to receiver
+	[root@localhost]# xtms_send_single  123.56.186.158 8660 name1 123456 name0 "hello world"
+
+	send loop messages to receiver
+	[root@localhost]# xtms_send 123.56.186.158 8660 name1 123456 name0 "how are you"
+
