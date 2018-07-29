@@ -16,19 +16,16 @@ This software enables businesses to rapidly build and deploy the APP which need 
 
 	[root@localhost]# rpm -ql  xtms_cli-1.0-1.el7.centos.x86_64
 	
-
 ## RUN
 
 	start xtms receiver
 	
 	[root@localhost]# xtms_recv 123.56.186.158 8660 test0 123456
-	
-	
+		
 	send single message to receiver
 	
 	[root@localhost]# xtms_send_single  123.56.186.158 8660 test1 123456 test0 "hello world"
 	
-
 	send loop messages to receiver
 	
 	[root@localhost]# xtms_send 123.56.186.158 8660 test1 123456 test0 "how are you"
